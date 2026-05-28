@@ -1,0 +1,15 @@
+abs(   9.81 * 998.2 * inflow /998.2 * head / (  (Moment(['row_1_hub', 'row_1_main_blade', 'row_1_shroud']).z)*2*PI*1493/60 )    )*100 
+abs(   DENS * 998.2 * inflow /998.2 * head / (  (Moment(['row_1_hub', 'row_1_main_blade', 'row_1_shroud']).z)*2*PI*1493/60 )    )*100 
+
+
+# Usage
+## Equation - 
+## abs( G * DENSITY * MASS_INFLOW /DENSITY * HEAD / (  (Moment(['row_1_hub', 'row_1_main_blade', 'row_1_shroud']).z)*2*PI*N_SPEED(REV/MIN) / 60 )    ) * 100 
+## Where   
+# G – gravitational acceleration (m/s²)
+# DENSITY – fluid density (kg/m³)
+# MASS_INFLOW – mass flow rate (kg/s)
+# HEAD – pump head (m)
+# Moment([...]).z – z‑component of the net torque acting on the rotor (blade row: hub, main blade, shroud) in N·m
+# N_SPEED – rotational speed (REV/MIN)
+# PI – mathematical constant π ≈ 3.14159
