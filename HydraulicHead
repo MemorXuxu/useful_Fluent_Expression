@@ -1,4 +1,4 @@
 (MassFlowAve(TotalPressure,['inlet']) - MassFlowAve(TotalPressure,['outlet']))/998/9.81
-
+(MassFlowAve(TotalPressure,['row_1_outflow']) - MassFlowAve(TotalPressure,['row_1_inflow']))/998/9.81
 # Usage
 # ['inlet'] & ['outlet'] are cell zones of computational domains
